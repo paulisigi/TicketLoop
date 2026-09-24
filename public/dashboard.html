@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ticket Loop</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="brand">
+                <div class="brand-mark">TL</div>
+                <span>Ticket Loop</span>
+            </div>
+
+            <nav class="sidebar-nav">
+
+                <p class="nav-label">MENU</p>
+
+                <a href="#" class="nav-item active">
+                    <span class="icon">⌂</span>
+                    Dashboard
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="icon">◈</span>
+                    My Events
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="icon">◎</span>
+                    Tickets
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="icon">＋</span>
+                    Create Event
+                </a>
+
+                <p class="nav-label">ACCOUNT</p>
+
+                <a href="#" class="nav-item">
+                    <span class="icon">◉</span>
+                    Profile
+                </a>
+
+                <a href="#" class="nav-item">
+                    <span class="icon">⚙</span>
+                    Settings
+                </a>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+
+                <div class="upgrade-card">
+                    <span class="upgrade-icon">✦</span>
+
+                    <div>
+                        <strong>Go Pro</strong>
+                        <p>Unlock more event tools.</p>
+                    </div>
+
+                    <button>→</button>
+                </div>
+
+                <div class="user-mini">
+                    <div class="avatar">PK</div>
+
+                    <div>
+                        <strong>Paul</strong>
+                        <span>Organizer</span>
+                    </div>
+
+                    <button>•••</button>
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main">
+
+            <!-- TOP BAR -->
+            <header class="topbar">
+
+                <div>
+                    <p class="eyebrow">TUESDAY, SEPTEMBER 22</p>
+                    <h1>Good evening, Paul<span>.</span></h1>
+                </div>
+
+                <div class="top-actions">
+
+                    <div class="search">
+                        <span>⌕</span>
+                        <input type="text" id="searchBar" placeholder="Search events...">
+                        <kbd>⌘ K</kbd>
+                    </div>
+
+                    <button class="notification">
+                        ♢
+                        <span></span>
+                    </button>
+
+                    <button class="create-btn">
+                        <b>+</b>
+                        Create event
+                    </button>
+
+                </div>
+
+            </header>
+
+
+            <!-- OVERVIEW -->
+            <section class="overview">
+
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">OVERVIEW</p>
+                        <h2>Your event pulse</h2>
+                    </div>
+
+                    <button class="date-filter">
+                        This month ▾
+                    </button>
+                </div>
+
+
+                <!-- STAT CARDS -->
+                <div class="stats-grid">
+
+                    <article class="stat-card purple">
+
+                        <div class="stat-top">
+                            <span>Total revenue</span>
+                            <span class="stat-icon">↗</span>
+                        </div>
+
+                        <strong>$12,480</strong>
+
+                        <div class="stat-bottom">
+                            <span class="positive">+18.4%</span>
+                            <span>vs last month</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-top">
+                            <span>Tickets sold</span>
+                            <span class="stat-icon">◇</span>
+                        </div>
+
+                        <strong>1,284</strong>
+
+                        <div class="stat-bottom">
+                            <span class="positive">+12.7%</span>
+                            <span>vs last month</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="stat-card lime">
+
+                        <div class="stat-top">
+                            <span>Active events</span>
+                            <span class="stat-icon">✦</span>
+                        </div>
+
+                        <strong>08</strong>
+
+                        <div class="stat-bottom">
+                            <span class="neutral">3 upcoming</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="stat-card">
+
+                        <div class="stat-top">
+                            <span>Attendees</span>
+                            <span class="stat-icon">◎</span>
+                        </div>
+
+                        <strong>2,491</strong>
+
+                        <div class="stat-bottom">
+                            <span class="positive">+24.1%</span>
+                            <span>this month</span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- DASHBOARD GRID -->
+            <section class="dashboard-grid">
+
+                <!-- EVENTS -->
+                <div class="panel events-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <p class="eyebrow">UPCOMING</p>
+                            <h2>Your events</h2>
+                        </div>
+
+                        <a href="#">View all →</a>
+
+                    </div>
+
+
+                    <div class="event-list">
+
+                        <article class="event">
+
+                            <div class="event-date">
+                                <span>OCT</span>
+                                <strong>04</strong>
+                            </div>
+
+                            <div class="event-info">
+                                <h3>Night Shift Nairobi</h3>
+                                <p>📍 The Alchemist · Nairobi</p>
+                            </div>
+
+                            <div class="event-status">
+                                <span class="status live">Live</span>
+                                <strong>428 tickets</strong>
+                            </div>
+
+                            <button class="more">•••</button>
+
+                        </article>
+
+
+                        <article class="event">
+
+                            <div class="event-date">
+                                <span>OCT</span>
+                                <strong>12</strong>
+                            </div>
+
+                            <div class="event-info">
+                                <h3>Creative Minds</h3>
+                                <p>📍 Sarit Expo Centre · Nairobi</p>
+                            </div>
+
+                            <div class="event-status">
+                                <span class="status upcoming">Upcoming</span>
+                                <strong>186 tickets</strong>
+                            </div>
+
+                            <button class="more">•••</button>
+
+                        </article>
+
+
+                        <article class="event">
+
+                            <div class="event-date">
+                                <span>OCT</span>
+                                <strong>19</strong>
+                            </div>
+
+                            <div class="event-info">
+                                <h3>Afro Future</h3>
+                                <p>📍 Uhuru Gardens · Nairobi</p>
+                            </div>
+
+                            <div class="event-status">
+                                <span class="status draft">Draft</span>
+                                <strong>Not published</strong>
+                            </div>
+
+                            <button class="more">•••</button>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ACTIVITY -->
+                <div class="panel activity-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <p class="eyebrow">RECENT</p>
+                            <h2>Activity</h2>
+                        </div>
+
+                        <button class="more">•••</button>
+
+                    </div>
+
+
+                    <div class="activity-list">
+
+                        <div class="activity">
+
+                            <div class="activity-icon purple-bg">↗</div>
+
+                            <div>
+                                <strong>New ticket sale</strong>
+                                <p>Night Shift Nairobi</p>
+                                <span>8 minutes ago</span>
+                            </div>
+
+                            <b>+$45</b>
+
+                        </div>
+
+
+                        <div class="activity">
+
+                            <div class="activity-icon lime-bg">✓</div>
+
+                            <div>
+                                <strong>Event published</strong>
+                                <p>Creative Minds</p>
+                                <span>2 hours ago</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="activity">
+
+                            <div class="activity-icon cyan-bg">◎</div>
+
+                            <div>
+                                <strong>42 new attendees</strong>
+                                <p>Night Shift Nairobi</p>
+                                <span>5 hours ago</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SALES CHART -->
+                <div class="panel chart-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <p class="eyebrow">PERFORMANCE</p>
+                            <h2>Ticket sales</h2>
+                        </div>
+
+                        <div class="chart-value">
+                            <strong>1,284</strong>
+                            <span>tickets</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="fake-chart">
+
+                        <div class="chart-lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="chart-bars">
+                            <i style="height:35%"></i>
+                            <i style="height:50%"></i>
+                            <i style="height:42%"></i>
+                            <i style="height:65%"></i>
+                            <i style="height:55%"></i>
+                            <i style="height:78%"></i>
+                            <i style="height:70%"></i>
+                            <i style="height:90%"></i>
+                            <i style="height:82%"></i>
+                            <i style="height:100%"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="chart-labels">
+                        <span>SEP 01</span>
+                        <span>SEP 08</span>
+                        <span>SEP 15</span>
+                        <span>SEP 22</span>
+                    </div>
+
+                </div>
+
+
+                <!-- QUICK ACTIONS -->
+                <div class="panel quick-panel">
+
+                    <div class="panel-header">
+                        <div>
+                            <p class="eyebrow">SHORTCUTS</p>
+                            <h2>Quick actions</h2>
+                        </div>
+                    </div>
+
+                    <div class="quick-actions">
+
+                        <button>
+                            <span>＋</span>
+                            <div>
+                                <strong>Create event</strong>
+                                <small>Start something new</small>
+                            </div>
+                        </button>
+
+                        <button>
+                            <span>◇</span>
+                            <div>
+                                <strong>Manage tickets</strong>
+                                <small>View your inventory</small>
+                            </div>
+                        </button>
+
+                        <button>
+                            <span>↗</span>
+                            <div>
+                                <strong>View analytics</strong>
+                                <small>Track performance</small>
+                            </div>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

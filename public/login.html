@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login — Ticket Loop</title>
+
+    <link rel="stylesheet" href="css/auth.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <div class="auth-page">
+
+
+        <!-- LEFT -->
+
+        <section class="auth-visual">
+
+            <a href="#" class="logo">
+                <span>TL</span>
+                Ticket Loop
+            </a>
+
+
+            <div class="visual-content">
+
+                <p class="eyebrow">
+                    WELCOME BACK
+                </p>
+
+                <h1>
+                    Your next<br>
+                    <span>experience</span><br>
+                    starts here.
+                </h1>
+
+                <p>
+                    Discover events, meet people,
+                    and find something worth showing up for.
+                </p>
+
+
+                <div class="mini-event">
+
+                    <div class="mini-event-image"></div>
+
+                    <div>
+
+                        <span>
+                            HAPPENING SOON
+                        </span>
+
+                        <h3>
+                            Night Shift Nairobi
+                        </h3>
+
+                        <p>
+                            OCT 04 · Nairobi
+                        </p>
+
+                    </div>
+
+                    <strong>
+                        →
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="visual-footer">
+                Find something worth showing up for.
+            </div>
+
+        </section>
+
+
+        <!-- RIGHT -->
+
+        <section class="auth-form-section">
+
+            <div class="auth-form">
+
+                <button class="theme-toggle" id="themeToggle">
+                    ☾
+                </button>
+
+
+                <p class="eyebrow">
+                    ACCOUNT
+                </p>
+
+                <h2>
+                    Welcome back.
+                </h2>
+
+                <p class="subtitle">
+                    Log in to continue exploring events.
+                </p>
+
+
+                <form method="post" action="/auth/login">
+
+                    <label>
+                        Email address
+                    </label>
+
+                    <input type="email" placeholder="you@example.com" name="email" required>
+
+
+                    <div class="label-row">
+
+                        <label>
+                            Password
+                        </label>
+
+                        <a href="#">
+                            Forgot password?
+                        </a>
+
+                    </div>
+
+                    <input type="password" name="password" placeholder="Enter your password" required>
+
+
+                    <button type="submit" class="primary-btn">
+                        Log in →
+                    </button>
+
+                </form>
+
+
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+
+
+                <button class="social-btn">
+                    Continue with Google
+                </button>
+
+
+                <p class="switch-auth">
+                    Don't have an account?
+                    <a href="register.html">
+                        Create one
+                    </a>
+                </p>
+
+            </div>
+        </section>
+    </div>
+
+
+    <script src="js/theme.js"></script>
+</body>
+</html>

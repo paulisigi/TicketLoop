@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explore — Ticket Loop</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/explore.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <a href="/foryou.html" class="logo">
+            <span class="logo-mark">TL</span>
+            <span>Ticket Loop</span>
+        </a>
+
+        <nav class="main-nav">
+            <a href="/foryou.html">For You</a>
+            <a href="/explore.html" class="active">Explore</a>
+            <a href="/tickets.html">My Tickets</a>
+        </nav>
+
+        <div class="nav-actions">
+
+            <button class="icon-button theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span class="sun-icon">☀</span>
+                <span class="moon-icon">☾</span>
+            </button>
+
+            <button class="icon-button" aria-label="Notifications">
+                ♢
+            </button>
+
+            <a href="/profile.html" class="profile-button">
+
+                <span class="profile-avatar">
+                    P
+                </span>
+
+                <span class="profile-info">
+                    <strong>Paul</strong>
+                    <small>Attendee</small>
+                </span>
+
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             EXPLORE HEADER
+        ========================== -->
+
+        <section class="explore-header">
+
+            <div>
+
+                <span class="eyebrow">
+                    DISCOVER
+                </span>
+
+                <h1>
+                    Explore events.
+                </h1>
+
+                <p>
+                    Find something happening around you.
+                    Browse by category, date, location or vibe.
+                </p>
+
+            </div>
+
+            <div class="result-count">
+                <strong id="resultCount">8</strong>
+                <span>events found</span>
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SEARCH + FILTERS
+        ========================== -->
+
+        <section class="filter-section">
+
+            <div class="search-container">
+
+                <span class="search-icon">
+                    ⌕
+                </span>
+
+                <input type="search" id="eventSearch" placeholder="Search events, artists, venues..."
+                    autocomplete="off">
+
+            </div>
+
+
+            <div class="filters">
+
+                <button class="filter-button active">
+                    All events
+                </button>
+
+                <button class="filter-button">
+                    Today
+                </button>
+
+                <button class="filter-button">
+                    This week
+                </button>
+
+                <button class="filter-button">
+                    This month
+                </button>
+
+                <button class="filter-button">
+                    Free
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CATEGORY BAR
+        ========================== -->
+
+        <section class="categories">
+
+            <button class="category active">
+                <span>✦</span>
+                All
+            </button>
+
+            <button class="category">
+                <span>♫</span>
+                Music
+            </button>
+
+            <button class="category">
+                <span>◉</span>
+                Nightlife
+            </button>
+
+            <button class="category">
+                <span>◇</span>
+                Sports
+            </button>
+
+            <button class="category">
+                <span>⌘</span>
+                Tech
+            </button>
+
+            <button class="category">
+                <span>✎</span>
+                Art
+            </button>
+
+            <button class="category">
+                <span>♨</span>
+                Food
+            </button>
+
+        </section>
+
+
+        <!-- =========================
+             CONTENT
+        ========================== -->
+
+        <section class="explore-content">
+
+            <!-- SIDEBAR -->
+
+            <aside class="filter-sidebar">
+
+                <div class="sidebar-header">
+
+                    <h3>
+                        Filters
+                    </h3>
+
+                    <button id="clearFilters">
+                        Clear
+                    </button>
+
+                </div>
+
+
+                <div class="filter-group">
+
+                    <h4>
+                        Location
+                    </h4>
+
+                    <label class="check-option">
+                        <input type="checkbox">
+                        <span>Nairobi</span>
+                    </label>
+
+                    <label class="check-option">
+                        <input type="checkbox">
+                        <span>Westlands</span>
+                    </label>
+
+                    <label class="check-option">
+                        <input type="checkbox">
+                        <span>Kilimani</span>
+                    </label>
+
+                    <label class="check-option">
+                        <input type="checkbox">
+                        <span>CBD</span>
+                    </label>
+
+                </div>
+
+
+                <div class="filter-group">
+
+                    <h4>
+                        Price
+                    </h4>
+
+                    <label class="check-option">
+                        <input type="checkbox">
+                        <span>Free</span>
+                    </label>
+
+                    <label class="check-option">
+                        <input type="checkbox">
+                        <span>Under KSh 500</span>
+                    </label>
+
+                    <label class="check-option">
+                        <input type="checkbox">
+                        <span>KSh 500 – 1,500</span>
+                    </label>
+
+                    <label class="check-option">
+                        <input type="checkbox">
+                        <span>Over KSh 1,500</span>
+                    </label>
+
+                </div>
+
+
+                <div class="filter-group">
+
+                    <h4>
+                        Date
+                    </h4>
+
+                    <label class="check-option">
+                        <input type="checkbox">
+                        <span>Today</span>
+                    </label>
+
+                    <label class="check-option">
+                        <input type="checkbox">
+                        <span>This weekend</span>
+                    </label>
+
+                    <label class="check-option">
+                        <input type="checkbox">
+                        <span>Next week</span>
+                    </label>
+
+                </div>
+
+            </aside>
+
+
+            <!-- EVENTS -->
+
+            <div class="events-area">
+
+                <div class="events-toolbar">
+
+                    <span>
+                        Showing <strong id="showingCount">8</strong> events
+                    </span>
+
+                    <select id="sortEvents">
+
+                        <option value="soonest">
+                            Soonest first
+                        </option>
+
+                        <option value="price-low">
+                            Price: Low to high
+                        </option>
+
+                        <option value="price-high">
+                            Price: High to low
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="explore-grid" id="eventsGrid">
+
+                    <!-- EVENT 1 -->
+
+                    <article class="explore-card" data-title="Night Shift Nairobi" data-category="nightlife"
+                        data-price="1000">
+
+                        <div class="explore-image image-1">
+
+                            <span class="date-badge">
+                                <strong>18</strong>
+                                OCT
+                            </span>
+
+                            <button class="favorite" aria-label="Favorite event">
+                                ♡
+                            </button>
+
+                        </div>
+
+                        <div class="card-content">
+
+                            <span class="event-category">
+                                NIGHTLIFE
+                            </span>
+
+                            <h3>
+                                Night Shift Nairobi
+                            </h3>
+
+                            <p>
+                                📍 The Alchemist · 8:00 PM
+                            </p>
+
+                            <div class="card-bottom">
+
+                                <strong>
+                                    KSh 1,000
+                                </strong>
+
+                                <button>
+                                    Tickets →
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- EVENT 2 -->
+
+                    <article class="explore-card" data-title="Creative Minds" data-category="tech" data-price="500">
+
+                        <div class="explore-image image-2">
+
+                            <span class="date-badge">
+                                <strong>21</strong>
+                                OCT
+                            </span>
+
+                            <button class="favorite" aria-label="Favorite event">
+                                ♡
+                            </button>
+
+                        </div>
+
+                        <div class="card-content">
+
+                            <span class="event-category">
+                                TECH
+                            </span>
+
+                            <h3>
+                                Creative Minds
+                            </h3>
+
+                            <p>
+                                📍 iHub Nairobi · 10:00 AM
+                            </p>
+
+                            <div class="card-bottom">
+
+                                <strong>
+                                    KSh 500
+                                </strong>
+
+                                <button>
+                                    Tickets →
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- EVENT 3 -->
+
+                    <article class="explore-card" data-title="Nairobi City Run" data-category="sports" data-price="800">
+
+                        <div class="explore-image image-3">
+
+                            <span class="date-badge">
+                                <strong>25</strong>
+                                OCT
+                            </span>
+
+                            <button class="favorite" aria-label="Favorite event">
+                                ♡
+                            </button>
+
+                        </div>
+
+                        <div class="card-content">
+
+                            <span class="event-category">
+                                SPORTS
+                            </span>
+
+                            <h3>
+                                Nairobi City Run
+                            </h3>
+
+                            <p>
+                                📍 Karura Forest · 6:30 AM
+                            </p>
+
+                            <div class="card-bottom">
+
+                                <strong>
+                                    KSh 800
+                                </strong>
+
+                                <button>
+                                    Tickets →
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- EVENT 4 -->
+
+                    <article class="explore-card" data-title="Rooftop Sessions" data-category="music" data-price="1200">
+
+                        <div class="explore-image image-4">
+
+                            <span class="date-badge">
+                                <strong>27</strong>
+                                OCT
+                            </span>
+
+                            <button class="favorite" aria-label="Favorite event">
+                                ♡
+                            </button>
+
+                        </div>
+
+                        <div class="card-content">
+
+                            <span class="event-category">
+                                MUSIC
+                            </span>
+
+                            <h3>
+                                Rooftop Sessions
+                            </h3>
+
+                            <p>
+                                📍 Westlands · 6:00 PM
+                            </p>
+
+                            <div class="card-bottom">
+
+                                <strong>
+                                    KSh 1,200
+                                </strong>
+
+                                <button>
+                                    Tickets →
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- EVENT 5 -->
+
+                    <article class="explore-card" data-title="Sounds of Nairobi" data-category="music"
+                        data-price="1500">
+
+                        <div class="explore-image image-5">
+
+                            <span class="date-badge">
+                                <strong>29</strong>
+                                OCT
+                            </span>
+
+                            <button class="favorite" aria-label="Favorite event">
+                                ♡
+                            </button>
+
+                        </div>
+
+                        <div class="card-content">
+
+                            <span class="event-category">
+                                MUSIC
+                            </span>
+
+                            <h3>
+                                Sounds of Nairobi
+                            </h3>
+
+                            <p>
+                                📍 Ngong Road · 7:00 PM
+                            </p>
+
+                            <div class="card-bottom">
+
+                                <strong>
+                                    KSh 1,500
+                                </strong>
+
+                                <button>
+                                    Tickets →
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- EVENT 6 -->
+
+                    <article class="explore-card" data-title="Sunset Social" data-category="food" data-price="0">
+
+                        <div class="explore-image image-6">
+
+                            <span class="date-badge">
+                                <strong>02</strong>
+                                NOV
+                            </span>
+
+                            <button class="favorite" aria-label="Favorite event">
+                                ♡
+                            </button>
+
+                        </div>
+
+                        <div class="card-content">
+
+                            <span class="event-category">
+                                FOOD
+                            </span>
+
+                            <h3>
+                                Sunset Social
+                            </h3>
+
+                            <p>
+                                📍 Kilimani · 5:00 PM
+                            </p>
+
+                            <div class="card-bottom">
+
+                                <strong>
+                                    Free
+                                </strong>
+
+                                <button>
+                                    Tickets →
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- EVENT 7 -->
+
+                    <article class="explore-card" data-title="Afro Future Nairobi" data-category="music"
+                        data-price="1500">
+
+                        <div class="explore-image image-7">
+
+                            <span class="date-badge">
+                                <strong>19</strong>
+                                OCT
+                            </span>
+
+                            <button class="favorite" aria-label="Favorite event">
+                                ♡
+                            </button>
+
+                        </div>
+
+                        <div class="card-content">
+
+                            <span class="event-category">
+                                MUSIC
+                            </span>
+
+                            <h3>
+                                Afro Future Nairobi
+                            </h3>
+
+                            <p>
+                                📍 Uhuru Gardens · 7:00 PM
+                            </p>
+
+                            <div class="card-bottom">
+
+                                <strong>
+                                    KSh 1,500
+                                </strong>
+
+                                <button>
+                                    Tickets →
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- EVENT 8 -->
+
+                    <article class="explore-card" data-title="Art After Dark" data-category="art" data-price="700">
+
+                        <div class="explore-image image-8">
+
+                            <span class="date-badge">
+                                <strong>04</strong>
+                                NOV
+                            </span>
+
+                            <button class="favorite" aria-label="Favorite event">
+                                ♡
+                            </button>
+
+                        </div>
+
+                        <div class="card-content">
+
+                            <span class="event-category">
+                                ART
+                            </span>
+
+                            <h3>
+                                Art After Dark
+                            </h3>
+
+                            <p>
+                                📍 Nairobi Gallery · 6:30 PM
+                            </p>
+
+                            <div class="card-bottom">
+
+                                <strong>
+                                    KSh 700
+                                </strong>
+
+                                <button>
+                                    Tickets →
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="empty-state" id="emptyState">
+
+                    <div class="empty-icon">
+                        ?
+                    </div>
+
+                    <h3>
+                        No events found
+                    </h3>
+
+                    <p>
+                        Try changing your search or filters.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="/foryou.html" class="logo">
+                    <span class="logo-mark">TL</span>
+                    <span>Ticket Loop</span>
+                </a>
+
+                <p>
+                    Discover what's happening.
+                    Find your people.
+                    Make memories.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Discover</h4>
+
+                <a href="/foryou.html">
+                    For You
+                </a>
+
+                <a href="/explore.html">
+                    Explore
+                </a>
+
+                <a href="#">
+                    Categories
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Your Tickets</h4>
+
+                <a href="/tickets.html">
+                    My Tickets
+                </a>
+
+                <a href="#">
+                    Favorites
+                </a>
+
+                <a href="/profile.html">
+                    Profile
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Company</h4>
+
+                <a href="#">
+                    About
+                </a>
+
+                <a href="#">
+                    Contact
+                </a>
+
+                <a href="#">
+                    Privacy
+                </a>
+
+                <a href="#">
+                    Terms
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 Ticket Loop
+            </span>
+
+            <span>
+                Discover better experiences.
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/theme.js"></script>
+
+    <script>
+
+        const searchInput =
+            document.getElementById("eventSearch");
+
+        const eventCards =
+            [...document.querySelectorAll(".explore-card")];
+
+        const categories =
+            document.querySelectorAll(".category");
+
+        const filterButtons =
+            document.querySelectorAll(".filter-button");
+
+        const resultCount =
+            document.getElementById("resultCount");
+
+        const showingCount =
+            document.getElementById("showingCount");
+
+        const emptyState =
+            document.getElementById("emptyState");
+
+
+        let activeCategory = "all";
+
+
+        function filterEvents() {
+
+            const query =
+                searchInput.value
+                    .toLowerCase()
+                    .trim();
+
+            let visibleEvents = 0;
+
+
+            eventCards.forEach(card => {
+
+                const title =
+                    card.dataset.title.toLowerCase();
+
+                const category =
+                    card.dataset.category.toLowerCase();
+
+                const matchesSearch =
+                    title.includes(query);
+
+                const matchesCategory =
+                    activeCategory === "all" ||
+                    category === activeCategory;
+
+
+                const visible =
+                    matchesSearch &&
+                    matchesCategory;
+
+
+                card.style.display =
+                    visible ? "" : "none";
+
+
+                if (visible) {
+                    visibleEvents++;
+                }
+
+            });
+
+
+            resultCount.textContent =
+                visibleEvents;
+
+            showingCount.textContent =
+                visibleEvents;
+
+
+            emptyState.classList.toggle(
+                "show",
+                visibleEvents === 0
+            );
+
+        }
+
+
+        searchInput.addEventListener(
+            "input",
+            filterEvents
+        );
+
+
+        categories.forEach(category => {
+
+            category.addEventListener(
+                "click",
+                () => {
+
+                    categories.forEach(item => {
+                        item.classList.remove("active");
+                    });
+
+                    category.classList.add("active");
+
+                    activeCategory =
+                        category.textContent
+                            .trim()
+                            .toLowerCase();
+
+                    if (activeCategory === "all") {
+                        activeCategory = "all";
+                    }
+
+                    filterEvents();
+
+                }
+            );
+
+        });
+
+
+        filterButtons.forEach(button => {
+
+            button.addEventListener(
+                "click",
+                () => {
+
+                    filterButtons.forEach(item => {
+                        item.classList.remove("active");
+                    });
+
+                    button.classList.add("active");
+
+                }
+            );
+
+        });
+
+
+        document
+            .getElementById("clearFilters")
+            .addEventListener("click", () => {
+
+                document
+                    .querySelectorAll(
+                        ".filter-sidebar input"
+                    )
+                    .forEach(input => {
+                        input.checked = false;
+                    });
+
+                searchInput.value = "";
+
+                activeCategory = "all";
+
+                categories.forEach(item => {
+                    item.classList.remove("active");
+                });
+
+                categories[0].classList.add("active");
+
+                filterEvents();
+
+            });
+
+
+        document
+            .querySelectorAll(".favorite")
+            .forEach(button => {
+
+                button.addEventListener(
+                    "click",
+                    () => {
+
+                        const liked =
+                            button.classList.toggle("liked");
+
+                        button.textContent =
+                            liked ? "♥" : "♡";
+
+                    }
+                );
+
+            });
+
+    </script>
+
+</body>
+
+</html>
